@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+
+section{
+    padding: 40px 4%;
+}
+
+#h-isolated{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#button-fixed{
+    background-color: #000000;
+}
+
+.standard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 13px;
+    color: #595959;
+    font-weight: bold;
+    margin: 10px 0px 40px;
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    background-color: #000000;   
+}
+
+header.rolagem{
+    background-color: #0c0d055f;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #fff;
+}
+
+header i{
+    font-size: 30px;
+    color: #fff;
+}
+
+header ul{
+    list-style-type: none;
+
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+header ul li a:hover{
+    border-bottom: 3px solid #fff;
+    transition: 0.1s;
+}
+
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0px;
+    background-color: #a8ab84;
+    color: #e7ebb0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+main .banner{
+    background-color:#151d07  ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+main .banner h1{
+    color: #a8ab84;
+}
+
+main .banner h1 span{
+    color: #c6c99d;
+}
+
+main .banner h1, span{
+    font-size: 70px;
+}
+
+main .section-about-me{
+    background-color: #e7ebb0;
+}
+
+main .section-about-me .about-me-top{
+    padding: 0px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .section-about-me-story{
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .about-me-story-left{
+    max-width: 650px;
+}
+
+main .about-me-story-left p{
+    font-size: 14px;
+    text-align: justify;
+    line-height: 180%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main .about-me-story-rigth img{
+    width: 480px;
+    height: 300px;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 15px;
+}
+
+main .section-my-projects{
+    background-color: #c6c99d ;
+}
+
+
+main .section-my-projects .my-projects{
+    display: flex;
+    justify-content: space-around;
+}
+
+main .section-my-projects .my-projects-standard{
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .section-my-projects .my-projects .my-projects-standard img{
+    width: 200px;
+    height: 110px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+main .section-my-projects .my-projects .my-projects-standard img:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+main .section-my-projects .my-projects-standard h5{
+    font-size: 15px;
+    margin: 20px 0px 0px 0px;
+}
+
+main .section-my-skills{
+    background-color: #a8ab84;
+}
+
+main .section-my-skills .box-my-skills{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .box-my-skills .my-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+}
+
+main .box-my-skills .my-skills img{
+    width: 70px;
+    height: 70px;
+    margin: 20px 0px;
+}
+
+main .box-my-skills .my-skills .img-isolated{
+    width: 50px;
+    height: 70px;
+}
+
+
+main .section-my-skills .my-projects--next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+main .section-my-skills .my-projects--next button{
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    margin: 0px 10px;
+    border: 0px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+main .section-my-skills .my-projects--next button:hover{
+    background-color: #000000;
+    transition: .3s;
+}
+
