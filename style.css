@@ -204,10 +204,9 @@ main .section-my-skills{
 }
 
 main .section-my-skills .box-my-skills{
-    max-width: 900px;
-    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 main .box-my-skills .my-skills{
@@ -229,27 +228,17 @@ main .box-my-skills .my-skills .img-isolated{
     height: 70px;
 }
 
-
-main .section-my-skills .my-projects--next{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0px;
+main .section-my-skills .box-my-skills #back-github, #back-git{
+    display: none;
 }
 
-main .section-my-skills .my-projects--next button{
-    width: 18px;
-    height: 18px;
-    border-radius: 50px;
-    margin: 0px 10px;
+main .section-my-skills .box-my-skills button{
     border: 0px;
-    background-color: #fff;
+    background-color: transparent;
     cursor: pointer;
-    transition: .2s;
 }
 
-main .section-my-skills .my-projects--next button:hover{
-    background-color: #000000;
-    transition: .3s;
+main .section-my-skills .box-my-skills button i{
+    font-size: 30px;
+    color: #000000;
 }
-
