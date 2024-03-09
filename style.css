@@ -7,7 +7,7 @@
 
 
 section{
-    padding: 40px 4%;
+    padding: 60px 4%;
 }
 
 #h-isolated{
@@ -46,6 +46,7 @@ p{
     margin: 0 auto;
 }
 
+/*  */
 .flex{
     display: flex;
     align-items: center;
@@ -59,9 +60,10 @@ header{
     top: 0;
     left: 0;
     transition: .5s;
-    background-color: #000000;   
+    background-color: rgba(0, 0, 0, 0.669);   
 }
 
+/* class criada no js para função scroll */
 header.rolagem{
     background-color: #0c0d055f;
     padding: 20px 4%;
@@ -71,14 +73,14 @@ header.rolagem a, header.rolagem i{
     color: #fff;
 }
 
+/* icone */
 header i{
     font-size: 30px;
     color: #fff;
 }
 
 header ul{
-    list-style-type: none;
-
+    list-style-type:none;
 }
 
 header ul li{
@@ -106,8 +108,10 @@ header ul li a:hover{
     transition: .2s;
 }
 
+
+/* banner abaixo do header */
 main .banner{
-    background-color:#151d07  ;
+    background-color:#e7ebb0  ;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -127,8 +131,10 @@ main .banner h1, span{
     font-size: 70px;
 }
 
+
+/* sessão "sobre mim" */
 main .section-about-me{
-    background-color: #e7ebb0;
+    background-color: #e7ebb0 ;
 }
 
 main .section-about-me .about-me-top{
@@ -143,6 +149,7 @@ main .section-about-me-story{
     max-width: 1180px;
     margin: auto;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 
@@ -164,6 +171,8 @@ main .about-me-story-rigth img{
     border-radius: 15px;
 }
 
+
+/* sessão "meus projetos */
 main .section-my-projects{
     background-color: #c6c99d ;
 }
@@ -199,6 +208,8 @@ main .section-my-projects .my-projects-standard h5{
     margin: 20px 0px 0px 0px;
 }
 
+
+/* sessão "minhas habilidades" */
 main .section-my-skills{
     background-color: #a8ab84;
 }
