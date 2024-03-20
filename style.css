@@ -7,7 +7,7 @@
 
 
 section{
-    padding: 60px 4%;
+    padding: 80px 4%;
 }
 
 #h-isolated{
@@ -25,6 +25,7 @@ section{
     justify-content: center;
     align-items: center;
 }
+
 h3{
     font-size: 23px;
     font-weight: bold;
@@ -41,17 +42,28 @@ p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* div do header, estabelecer um tamanho máximo */
 .container{
     max-width: 1280px;
     margin: 0 auto;
 }
 
-/*  */
+/* div do header que guarda as tag: a, nav e button */
 .flex{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
+
+/* config da logo */
+.logo{
+    height: 5rem;
+    width: 5rem;
+    background-color: #c6c99d;
+    border-radius: 50px;
+}
+
+/* ESTILOS DO HEADER */
 
 header{
     width: 100%;
@@ -60,23 +72,24 @@ header{
     top: 0;
     left: 0;
     transition: .5s;
-    background-color: rgba(0, 0, 0, 0.669);   
+    background-color: rgb(0, 0, 0);   
 }
 
 /* class criada no js para função scroll */
 header.rolagem{
-    background-color: #0c0d055f;
+    background-color: #000000f7;
     padding: 20px 4%;
 }
 
-header.rolagem a, header.rolagem i{
-    color: #fff;
-}
-
-/* icone */
+/* icone "logo" */
 header i{
     font-size: 30px;
     color: #fff;
+}
+
+/* menu de navegação */
+header nav{
+    padding: 0px 40px;
 }
 
 header ul{
@@ -93,9 +106,19 @@ header ul li a{
     color:#fff;
 }
 
-header ul li a:hover{
-    border-bottom: 3px solid #fff;
-    transition: 0.1s;
+header ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    display: 
+    block;
+    background-color: #ffffff;
+    transition: .6s ease-out;
+
+}
+
+header ul li a:hover::after{
+    width: 100%;
 }
 
 .btn-contato button{
@@ -106,6 +129,8 @@ header ul li a:hover{
     color: #e7ebb0;
     cursor: pointer;
     transition: .2s;
+    border-radius: 20px;
+    font-size: 16px;
 }
 
 
@@ -164,7 +189,7 @@ main .about-me-story-left p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-main .about-me-story-rigth img{
+main .about-me-story-right img{
     width: 480px;
     height: 300px;
     box-shadow: 0px 5px 10px black;
@@ -174,7 +199,8 @@ main .about-me-story-rigth img{
 
 /* sessão "meus projetos */
 main .section-my-projects{
-    background-color: #c6c99d ;
+    background-color: #e7ebb0 ;
+    
 }
 
 
@@ -211,13 +237,14 @@ main .section-my-projects .my-projects-standard h5{
 
 /* sessão "minhas habilidades" */
 main .section-my-skills{
-    background-color: #a8ab84;
+    background-color: #e7ebb0;
 }
 
 main .section-my-skills .box-my-skills{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 50vh;
 }
 
 main .box-my-skills .my-skills{
@@ -252,4 +279,53 @@ main .section-my-skills .box-my-skills button{
 main .section-my-skills .box-my-skills button i{
     font-size: 30px;
     color: #000000;
+}
+
+
+/* Rodapé da pagina */
+
+footer{
+    background-color: #000000;
+}
+
+.footer-settings{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-standard{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-standard h4{
+    font-size: 20px;
+}
+
+.footer-standard ul{
+    list-style-type: none;
+}
+
+.footer-standard ul li{
+    margin: 10px 0px;   
+}
+
+.footer-standard ul li a, i{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-standard ul li a i{
+    margin-right: 10px;
+}
+
+footer .copyright{
+    color: #a8ab84;
+    margin-top: 50px;
+    text-align: center;
 }

@@ -6,7 +6,6 @@ var back_github = document.getElementById("back-github");
 
 var back_git = document.getElementById("back-git");
 
-
 function Arrow_left(){  
 
     back_github.style.display = "flex";
@@ -17,7 +16,7 @@ function Arrow_left(){
     my_skills2.style.display = "none";
 }
 
-function Arrow_rigth(){
+function Arrow_right(){
     back_github.style.display = "none";
     back_git.style.display = "none"
 
